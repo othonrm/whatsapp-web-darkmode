@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "Whatsapp Darkmode",
+    "description": "This extension will turn you whatsapp into dark mode",
+    "version": "1.0",
+    "author": "José Othon",
+    "website": "https://github.com/othonrm",
+
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/"],
+            "css": ["main.css"]
+        }
+    ]
+}
